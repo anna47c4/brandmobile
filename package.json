@@ -1,0 +1,24 @@
+{
+  "name": "brandmobile",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "preact": "^10.11.3",
+    "react-media": "^1.10.0",
+    "react-router-dom": "^6.8.1",
+    "react-slick": "^0.29.0",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.5.0",
+    "babel-plugin-module-resolver": "^5.0.0",
+    "sass": "^1.58.3",
+    "vite": "^4.1.0"
+  }
+}

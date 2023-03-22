@@ -10,8 +10,6 @@ function SoloProject({ caseData }) {
     }
   });
 
-  // custom hook to get the current pathname in React
-
   return (
     <>
       <h1>{theCase.title}</h1>

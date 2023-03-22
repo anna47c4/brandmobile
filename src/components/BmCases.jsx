@@ -28,29 +28,14 @@ function BmCases({ soloCase }) {
   };
   return (
     <>
-      {/*   {caseData.map((caseData) => {
-        let style = {
-          backgroundImage: "url(" + caseData.img + ")",
-        };
-        return (
-          <div className="case" style={style} id={caseData.id}>
-            <p>{caseData.company}</p>
-            <h2>{caseData.title}</h2>
-            <p>{caseData.desc}</p>
-            <PrimaryButton
-              desc={"SEE THE CASE"}
-              className="case-btn"
-            ></PrimaryButton>
-          </div>
-        );
-      })} */}
-      <div className="case" style={style} onClick={goToCase} id={soloCase.id}>
+      <div className="case" style={style} id={soloCase.id}>
         <p>{soloCase.company}</p>
         <h2>{soloCase.title}</h2>
         <p>{soloCase.desc}</p>
         <PrimaryButton
           desc={"SEE THE CASE"}
           className="case-btn"
+          clickAction={goToCase}
         ></PrimaryButton>
       </div>
     </>

@@ -4,14 +4,50 @@
     "company": "Circle K",
     "title": "Driving traffic to store",
     "desc": "We deliver a fully-fledged solution driving incremental foot traffic to stores and expand the number of Extra Club Members in Europe.",
-    "img": "images/circle-k.webp"
+    "img": "images/circle-k.webp",
+    "story": "The circle k story",
+    "intro": "Circle K is driving footfall to gas stations and at the same time driving permission and new Extra Club Members.",
+    "resulttitle": [
+      "High performance and ROI",
+      "Sales Automation Integration",
+      "Responsive design",
+      "Circle K App integration",
+      "Power Business Intelligence",
+      "SEO & Digital optimisation"
+    ],
+    "resulttext": [
+      "Our Dashboard and analytics enable Circle K to balance Sales Automation and Martech stacks to secure optimal ROI on the campaigns.",
+      "Our solution is fully integrated with the Circle K Sales Automation platform Adobe. Consumers joining the campaign are receiving bonus features based on their current Extra Club Membership.",
+      "The concept works in a number of screen and platform environments. However, the gaming and voucher experience is always superior to Mobile Devices.",
+      "Our solutions are now moving into the new updated Circle K Europe mobile app with new and exciting features.",
+      "All campaign data are captured and delivered to Circle K Power B.I. in real-time and ROI is instantly calculated.",
+      "Our solution is fully compliant with tech stacks from Google, Facebook, Adobe and others. Also, we optimize the usage of cookie-based remarking capabilities, with results all-surpassing industry-standard benchmarks."
+    ]
   },
   {
     "id": "flyingtiger",
     "company": "Flying Tiger",
     "title": "Driving store traffic in multiple markets",
     "desc": "We have delivered strong ROI focused campaigns to up to 11 markets at the same time seamlessly with extremely high redemption ratios.",
-    "img": "images/flying-tiger.webp"
+    "img": "images/flying-tiger.webp",
+    "story": "The flying tiger story",
+    "intro": "From multiple markets and campaigns we have now found the optimal campaign equation driving footfall and sales in Flying Tigers physical stores",
+    "resulttitle": [
+      "High performance and ROI",
+      "E-mail integration",
+      "Responsive design",
+      "POS integration",
+      "Innovative Business Development",
+      "Playfull design"
+    ],
+    "resulttext": [
+      "Our Dashboard enabled Flying Tigers’ marketing team to work in short “stints” – actually week stints. This gave the team the opportunity to tweak both media and incentive schemes – in order to optimize campaign execution in real-time.",
+      "Our concept is now fully integrated with the e-mail tech stacks currently used by Flying Tigers. That means we both utilise text message and e-mail as transport layers for mobile vouchers.",
+      "The concept works in a number of screen and platform environments. However, the gaming and voucher experience is always superior to Mobile Devices.",
+      "Flying Tigers is challenged by the fact that many different POS systems are used in multiple countries. Applying multiple distributors in selected countries – a quite demanding setup. However, we have succeeded with the mobile voucher solution in 11 markets from Europe to the US.",
+      "It’s been a quite interesting journey delivering outstanding results to Flying Tiger. Challenging our solution and concepts that bring new and innovative solutions to the equation. That is what we like – to be challenged.",
+      "It all started with a Memory Game based on designer Misaki Kawai. The memory games design element was reused in a gamifyed context and broad a physical game to live in a digital environment – You can still try to challenge your memory skills here: https://demo.imob.nu/tiger/"
+    ]
   },
 
   {
@@ -19,7 +55,25 @@
     "company": "Danske spil",
     "title": "Highly engaging concepts",
     "desc": "Our highly engaging concepts deliver superior conversions and drive new leads and activate current customers effectively.",
-    "img": "images/ds.webp"
+    "img": "images/ds.webp",
+    "story": "The live casino story",
+    "intro": "Win without actually loosing. Demonstrating the Live Casino environment from Malta in a highly engaging way.",
+    "resulttitle": [
+      "High performance and ROI",
+      "Sales Automation Integration",
+      "Responsive design",
+      "Live Casino App integration",
+      "7-eleven mobile voucher",
+      "Live-ish experience"
+    ],
+    "resulttext": [
+      "Our Dashboard and analytics enable Danish Lottery to balance Sales Automation (Eloqua) and Martech stacks to secure optimal ROI in the campaign flight.",
+      "Our solution is fully integrated with the Danish Lottery Sales Automation platform Eloqua. Consumers received relevant e-mail reminders during the campaign period. Also the voucher delivery were in sync with Eloqua.",
+      "The concept works in a number of screen and platform environments. However, the gaming and voucher experience is always superior to Mobile Devices.",
+      "Our campaign elements were fully integrated into the Live Casino app delivering a seamless customer experience.",
+      "We delivered a fully 7-eleven designed mobile voucher solution – all in Live Casino branding – enhancing the gamification experience from the device down to the incentive redemption at the nearest convenience store.",
+      "We had the opportunity to design both video pieces as well as voice over pieces that were blended into the campaign equation in a smart way – delivering a smooth experience – almost as playing live!"
+    ]
   },
 
   {
@@ -27,41 +81,113 @@
     "company": "Carlsberg",
     "title": "Social Voucher driving traffic to pubs",
     "desc": "Carlsberg wanted to drive footfall to the partner Old Irish Pub. The solution was a true social voucher, connecting people in a new and exciting way.",
-    "img": "images/carlsberg.webp"
+    "img": "images/carlsberg.webp",
+    "story": "The Carlsberg story",
+    "intro": "Carlsberg Social Voucher",
+    "resulttitle": ["Dashboard and security", "Partner OIP", "Social Voucher"],
+    "resulttext": [
+      "Our Dashboard enabled the marketing department as well as the partner – Old Irish Pub – to follow the campaign in real-time.",
+      "The campaign was launched on social media – onboarding consumers with their mobile number.",
+      "This concept was the first true social voucher concept we have launched – backed up by a truly valuable incentive to join – namely two free beers served by OIP – sponsored by Carlsberg."
+    ]
   },
   {
     "id": "imerco",
     "company": "Imerco",
     "title": "Highly engaging concepts",
     "desc": "Our highly engaging concepts delivers superior conversions and drive new leads. We have also developed bespoke solutions for Imerco selected supplier – i.e. Kai Boyesen.",
-    "img": "images/imerco.webp"
+    "img": "images/imerco.webp",
+    "story": "The imerco story",
+    "intro": "Engaging consumers and driving new e-mail leads.",
+    "resulttitle": [
+      "Dashboard",
+      "Sales Automation Integration",
+      "Responsive design"
+    ],
+    "resulttext": [
+      "Imerco have to opportunity to follow campaigns in realtime and adjust marketing spend according to achieved KPIs.",
+      "Our solutions have been fully integrated with Imerco Sales Automation platforms – delivering new permissions in real-time via APIs.",
+      "The concepts works in a number of screen and platform environments. However, the gaming and voucher experiences has always been more sophisticated on mobile devices."
+    ]
   },
   {
     "id": "arla",
     "company": "Arla",
     "title": "Driving sales in 7-eleven",
     "desc": "Arla have a long lasting license for Starbucks Ready-to-drink products. We designed a relaunch campaign driving traffic to 7-eleven for daily commuters. We also added a twist of Gamification.",
-    "img": "images/7eleven.webp"
+    "img": "images/7eleven.webp",
+    "story": "The starbucks story",
+    "intro": "Starbucks wanted to re-introduce the ready-to-drink product 'Doubleshot'",
+    "resulttitle": [
+      "Dashboard",
+      "We did not reinvent the wheel but..",
+      "POS integration"
+    ],
+    "resulttext": [
+      "Both creative agency, Arla and 7-eleven could follow the traffic patterns from printet ads, OOH to actual store redemptions.",
+      "We actually flipped the standard process for campaigns – offering the voucher first – and secondly the gamification piece.",
+      "We developed our solution to comply with the 7-eleven standard for mobile voucher redemption – adding their specific QR-ish code for seamless store redemption."
+    ]
   },
   {
     "id": "mash",
     "company": "MASH",
     "title": "Christmas Activity",
     "desc": "MASH has been exploring the voucher concepts in multiple campaigns and wanted to take it to the next level. We agreed to put people into the equation as a centerpiece of the campaign.",
-    "img": "images/mash.webp"
+    "img": "images/mash.webp",
+    "story": "The mash story",
+    "intro": "MASH has explored the opportunities with vouchers before – and wanted to focus on a real live-ish experience.",
+    "resulttitle": [
+      "Dashboarding",
+      "Sales Automation Integration",
+      "Responsive design"
+    ],
+    "resulttext": [
+      "To keep the pace in the campaign MASH had access to a real-time dashboard, monitoring media efficiency, conversions and actual show-up in all MASH restaurants in Denmark.",
+      "The campaign was integrated with e-mail marketing platform as well as dinner-booking.",
+      "The concept worked in a number of screen and platform environments. However, the experience was always a better experience on a mobile device in your hand!"
+    ]
   },
   {
     "id": "bt",
     "company": "B.T.-Metro",
     "title": "Driving frequent readers of B.T.metro",
     "desc": "We delivered a bespoke solution for B.T.metro to enhance the frequency of daily readers. We added a new interactive scanning feature in the overall gameplay.",
-    "img": "images/bt.webp"
+    "img": "images/bt.webp",
+    "story": "The B.T.metro story",
+    "intro": "B.T.metro launched a frequency enhancing campaign – securing a higher number of readers in a specific targeted period.",
+    "resulttitle": [
+      "Dashboard",
+      "Insights",
+      "Responsive design",
+      "Scanning feature"
+    ],
+    "resulttext": [
+      "Berlingske could optimize the campaign during the short campaign period in order to achieve the goals set for the activity.",
+      "All consumer engagements, returning visitors, etc. were measured to prove the uplift in daily reader numbers.",
+      "The concept works in a number of screen and platform environments. However, scanning and spinning experience is always more optimal on mobile devices.",
+      "The feature enabled consumers to scan a daily code instead of punching in this manually on the mobile keyboard. That offered a seamless solution for participating daily over a period of three weeks."
+    ]
   },
   {
     "id": "bestseller",
     "company": "Bestseller",
     "title": "Driving store traffic in multiple markets",
     "desc": "We have delivered mobile voucher solutions for Nameit and Vero Moda in over 6 countries in Europe.",
-    "img": "images/bestseller.webp"
+    "img": "images/bestseller.webp",
+    "story": "The bestseller story",
+    "intro": "It all started with a new Bestseller app.",
+    "resulttitle": [
+      "Partner coop",
+      "Responsive design",
+      "Dashboard and security",
+      "POS integration"
+    ],
+    "resulttext": [
+      "The campaign was initiated by Bestsellers partner delivering push messages in apps.",
+      "The concept works in a number of screen and platform environments. However, the gaming and voucher experience is always better on mobile devices and makes more sense.",
+      "Our Dashboard enables the international marketing department and staff to follow the campaign development in real-time. In terms of security we had a 150 Euro gift card as part of the incentive scheme. That requires a high level of security.",
+      "Our solution was seamlessly integrated in over 300 shops in Europe. Due to the high level of security in our voucher solution the system was easy to implement for staff and management."
+    ]
   }
 ]

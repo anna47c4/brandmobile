@@ -769,6 +769,64 @@ footer {
   }
 }
 //////////////CONTACT PAGE////////////
-/* .contactSection {
+.contactSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 8px;
+  margin: 15px;
+  padding: 15px;
+  div {
+    .test-img {
+      max-width: 100%;
+    }
+  }
+
+  form {
+    margin: 0 0 2rem;
+    fieldset {
+      border: 0;
+      padding: 0;
+      margin: 2rem 0;
+      text-align: left;
+      .form-control {
+        display: grid;
+        label {
+          font-weight: 700;
+          line-height: 1;
+          margin-top: 15px;
+          margin-bottom: 5px;
+          display: grid;
+          gap: 5px;
+        }
+        input,
+        textarea {
+          -webkit-appearance: none;
+          appearance: none;
+          /*       padding: 8px 12px 10px; */
+          padding: 15px;
+          margin-bottom: 8px;
+          outline: none;
+          caret-color: $color-main-blue;
+          background-color: #d4d5e06a;
+          border: none;
+          /*  border-bottom: 0.8px solid black; */
+          border-radius: 4px;
+          box-shadow: -4px 6px 10px 0px rgba(0, 0, 0, 0.17);
+          -webkit-box-shadow: -4px 6px 10px 0px rgba(0, 0, 0, 0.17);
+          -moz-box-shadow: -4px 6px 10px 0px rgba(0, 0, 0, 0.17);
+        }
+        textarea:focus,
+        input:focus {
+          background-color: #3b46965d;
+        }
+
+        input:-webkit-autofill {
+          transition: 5000s background 0s !important;
+        }
+      }
+    }
+    button {
+      align-self: baseline;
+    }
+  }
 }
- */

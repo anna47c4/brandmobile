@@ -2,6 +2,7 @@ import BmCases from "../components/BmCases";
 import Footer from "../components/Footer";
 
 function Cases({ caseData }) {
+  /*   console.log(caseData); */
   return (
     <>
       <div className="case-page-wrapper">

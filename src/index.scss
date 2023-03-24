@@ -768,6 +768,122 @@ footer {
     }
   }
 }
+//////////////////SOLOPROJECT PAGE MOBILE STYLING STARTS HERE//////////////////
+.soloSection {
+  padding: 0;
+  .top-container {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    vertical-align: middle;
+
+    .logo {
+      width: fit-content;
+      margin: 0;
+      padding: 0;
+      /*    margin: 0;
+      padding: 0;
+      vertical-align: baseline;
+      border: 0;
+      outline: 0;
+      background: transparent;
+      text-align: left; 
+      img {
+      }*/
+      img {
+        margin: 0;
+        padding: 0;
+      }
+    }
+    .story {
+      border-left: 3px solid black;
+      padding: 15px;
+      p {
+        color: $color-main-black;
+        font-size: $fontsize-smaller;
+        font-weight: 400;
+        letter-spacing: 2px;
+      }
+    }
+  }
+  .case-txt {
+    padding: 15px;
+    padding-top: 0;
+    font-size: $fontsize-small;
+    line-height: 30px;
+    letter-spacing: -1px;
+    p {
+      line-height: 28px;
+      letter-spacing: normal;
+    }
+    .break-line {
+      white-space: pre-line; //makes a space in the txt
+    }
+  }
+  .btn {
+    padding: 15px;
+    padding-bottom: 30px;
+  }
+  .numbers {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 50vh;
+    background-color: $color-main-blue;
+  }
+  .case-video {
+    .phone-container {
+      width: 200px;
+      position: relative;
+      margin: 100px;
+    }
+    .phone-container:after {
+      content: "";
+      display: block;
+      background: url(/src/assets/phone.webp);
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 147%;
+      height: 132%;
+      left: -33%;
+      top: -11.5%;
+      position: absolute;
+      z-index: 10;
+    }
+    .phone-container video {
+      position: relative;
+      z-index: 5;
+      width: 100%;
+      display: block;
+    }
+  }
+  .results {
+    margin: 15px;
+    padding: 15px;
+    .ico-txt-group {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      p {
+        color: $color-main-black;
+        font-weight: 700;
+      }
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+  .txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 15px;
+  }
+}
 //////////////CONTACT PAGE////////////
 .contactSection {
   display: grid;

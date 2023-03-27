@@ -8,7 +8,7 @@ function Cases({ caseData }) {
       <div className="case-page-wrapper">
         <section className="caseHeroSection">
           <div className="caseHeroText center-place-dir">
-            <p>We build bridges between brands and people.</p>
+            <p>Engagement that moves your Brand.</p>
             <h1>Some cases for your inspiration</h1>
           </div>
         </section>

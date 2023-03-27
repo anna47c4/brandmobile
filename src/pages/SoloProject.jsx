@@ -3,6 +3,8 @@ import { useLocation } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import PrimaryButton from "../components/PrimaryButton";
 import Footer from "../components/Footer";
+import CaseLogos from "../components/CaseLogos";
+
 function SoloProject({ caseData }) {
   const location = useLocation();
   /*   console.log(location.state); */
@@ -19,16 +21,31 @@ function SoloProject({ caseData }) {
     navigate("../contact");
   }
 
+  //shared class for images / video
+  const imgclass = `img-data ${theCase.company}`;
+
   return (
     <>
       <section className="soloSection">
-        {/*      <div className="top-img">
-          <img
-            src={theCase.img}
-            alt={theCase.company}
-            className={theCase.company}
-          ></img>
-        </div> */}
+        <div className="top-img">
+          {!theCase.heroimg && (
+            <video
+              src={theCase.herovideo}
+              alt={theCase.company}
+              className={imgclass}
+              autoPlay
+              muted
+              loop
+            ></video>
+          )}
+          {theCase.heroimg && (
+            <img
+              src={theCase.heroimg}
+              alt={theCase.company}
+              className={imgclass}
+            ></img>
+          )}
+        </div>
         <div className="top-container">
           <div className="logo">
             {!theCase.logo && <p>no logo.</p>}{" "}
@@ -36,8 +53,7 @@ function SoloProject({ caseData }) {
               <img
                 src={theCase.logo}
                 alt={theCase.company}
-                className={theCase.company}
-                style={{ width: "150px" }}
+                className={theCase.id}
               ></img>
             )}
           </div>
@@ -75,6 +91,9 @@ function SoloProject({ caseData }) {
         <div className="txt">
           <h2>We have worked with some of the top brands across the globe</h2>
           <p>And we would love to help you too</p>
+        </div>
+        <div className="logo-container">
+          <CaseLogos></CaseLogos>
         </div>
       </section>
       <Footer></Footer>

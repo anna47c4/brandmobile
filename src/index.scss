@@ -771,6 +771,11 @@ footer {
 //////////////////SOLOPROJECT PAGE MOBILE STYLING STARTS HERE//////////////////
 .soloSection {
   padding: 0;
+  .top-img {
+    .img-data {
+      width: 100%;
+    }
+  }
   .top-container {
     padding: 10px;
     display: flex;
@@ -782,18 +787,19 @@ footer {
       width: fit-content;
       margin: 0;
       padding: 0;
-      /*    margin: 0;
-      padding: 0;
-      vertical-align: baseline;
-      border: 0;
-      outline: 0;
-      background: transparent;
-      text-align: left; 
       img {
-      }*/
-      img {
-        margin: 0;
-        padding: 0;
+        margin: 0 0 20px -20px;
+        width: 150px;
+      }
+      img.arla {
+        width: 100px;
+        margin: 0 0 20px -6px;
+      }
+      img.carlsberg {
+        margin: 0 0 20px -40px;
+      }
+      img.bt {
+        margin: 0 0 20px -40px;
       }
     }
     .story {
@@ -883,14 +889,30 @@ footer {
     text-align: center;
     padding: 15px;
   }
+  .logo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+    gap: 8px;
+    .big-logo {
+      width: 60%;
+    }
+    .big-logo.arla {
+      width: 40%;
+    }
+  }
 }
 //////////////CONTACT PAGE////////////
 .contactSection {
-  display: grid;
+  /*   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 8px;
   margin: 15px;
-  padding: 15px;
+  padding: 15px; */
+  margin: 0;
+  padding: 0;
   div {
     .test-img {
       max-width: 100%;
@@ -898,7 +920,11 @@ footer {
   }
 
   form {
-    margin: 0 0 2rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+    /*     margin: 0 0 2rem; */
+
     fieldset {
       border: 0;
       padding: 0;
@@ -910,12 +936,13 @@ footer {
           font-weight: 700;
           line-height: 1;
           margin-top: 15px;
-          margin-bottom: 5px;
+          margin-bottom: 15px;
           display: grid;
           gap: 5px;
         }
         input,
         textarea {
+          font-family: $mulish;
           -webkit-appearance: none;
           appearance: none;
           /*       padding: 8px 12px 10px; */
@@ -931,6 +958,9 @@ footer {
           -webkit-box-shadow: -4px 6px 10px 0px rgba(0, 0, 0, 0.17);
           -moz-box-shadow: -4px 6px 10px 0px rgba(0, 0, 0, 0.17);
         }
+        #my-id {
+          appearance: normal;
+        }
         textarea:focus,
         input:focus {
           background-color: #3b46965d;
@@ -939,10 +969,74 @@ footer {
         input:-webkit-autofill {
           transition: 5000s background 0s !important;
         }
+        input[type="name"]:valid {
+          background-color: rgba(87, 183, 87, 0.67);
+        }
+        input[type="email"]:valid {
+          background-color: rgba(87, 183, 87, 0.67);
+        }
+        textarea:valid {
+          background-color: rgba(87, 183, 87, 0.67);
+        }
+      }
+    }
+    //privacy policy group - bottom of formular
+    .form-control-check {
+      margin-top: 20px;
+      label {
+        font-size: $fontsize-small;
+        color: $color-p;
+        font-weight: 700;
+        line-height: 27px;
+      }
+      a {
+        text-decoration: none;
+        color: $color-main-blue;
+      }
+      a:hover {
+        font-weight: 700;
+      }
+      input[type="checkbox"] {
+        cursor: pointer;
+        margin-right: 6px;
+      }
+      input[type="checkbox"]:checked {
+        accent-color: $color-main-blue;
       }
     }
     button {
+      margin-top: 15px;
       align-self: baseline;
+    }
+    input:valid {
+      background-color: rgba(93, 192, 93, 0.545);
+    }
+  }
+  .box {
+    background-image: url("./assets/bm-print-true.png");
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 30vh;
+
+    p {
+      margin: 0;
+      color: $color-main-black;
+      text-align: center;
+    }
+    .p-top {
+      font-size: $fontsize-2;
+      padding: 20px;
+      padding-top: 30px;
+      font-weight: 700;
+    }
+    .p-bottom {
+      padding: 20px;
+      span {
+        color: $color-main-blue;
+        font-style: italic;
+      }
     }
   }
 }

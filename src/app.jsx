@@ -7,6 +7,7 @@ import Contact from "./pages/Contact";
 import Cases from "./pages/Cases";
 import NoPage from "./pages/NoPage";
 import SoloProject from "./pages/SoloProject";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 import ScrollButton from "./components/ScrollButton";
 import allCases from "./allcases.json";
 /* import Casedata, { loader as caseLoader } from "./routes/casedata";
@@ -45,6 +46,7 @@ export function App() {
               element={<SoloProject caseData={caseData} />}
             />
             <Route path="*" element={<NoPage />} />
+            <Route path="privacypolicy" element={<PrivacyPolicy />} />
           </Route>
         </Routes>
       </BrowserRouter>

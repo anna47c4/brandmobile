@@ -33,7 +33,6 @@ function ThirdSection() {
             ></img>
           </div>
         </div>
-
         <div className="case-container">
           <div className="text case-examples">
             <div className="heading-container">

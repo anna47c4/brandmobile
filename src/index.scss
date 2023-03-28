@@ -63,6 +63,7 @@ button {
   cursor: pointer;
   color: $color-main-white;
 }
+
 h2 {
   font-size: $fontsize-3;
   letter-spacing: -1px;
@@ -308,11 +309,17 @@ p {
       }
     }
   }
+  /*   .case-examples {
+    text-align: center;
+    max-width: 900px;
+  }
+ */
   .img {
     width: 300px;
     padding-top: 15px;
   }
 }
+
 .fourthSection {
   background: url("./assets/svg/test-hehe-01.svg");
   background-position: 0% 80%;
@@ -560,18 +567,15 @@ footer {
     }
     //second part of the thirdSection
     .case-examples {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
       .heading-container {
-        h2 {
+        h2,
+        span {
           font-size: $fontsize-1;
           font-weight: 800;
-          text-align: center;
+          line-height: 60px;
         }
       }
     }
-
     .case-container {
       display: grid;
       justify-content: center;
@@ -584,6 +588,7 @@ footer {
     }
   }
 }
+
 //FourthSection HOMEPAGE
 @media (min-width: 767px) {
   .fourthSection {
@@ -1041,6 +1046,39 @@ footer {
         color: $color-main-blue;
         font-style: italic;
       }
+    }
+  }
+}
+////////////////////PRIVACY POLICY MOBILE STYLING////////////////////
+.privacyPol {
+  /*   display: grid;
+  justify-content: center; */
+  .privacy-wrapper {
+    /*    display: grid;
+    max-width: none; */
+    h1 {
+      font-size: $fontsize-2;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    h2 {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    p {
+      line-height: 30px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+}
+//desktop adaptions
+@media (min-width: 762px) {
+  .privacyPol {
+    display: grid;
+    justify-content: center;
+    .privacy-wrapper {
+      max-width: 900px;
     }
   }
 }

@@ -4,8 +4,13 @@ import { useNavigate } from "react-router-dom";
 import PrimaryButton from "../components/PrimaryButton";
 import Footer from "../components/Footer";
 import CaseLogos from "../components/CaseLogos";
+import { useEffect } from "react";
 
 function SoloProject({ caseData }) {
+  //so the page scrolls to top when mounted
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const location = useLocation();
   /*   console.log(location.state); */
   let theCase;

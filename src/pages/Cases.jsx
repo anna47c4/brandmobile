@@ -1,8 +1,11 @@
 import BmCases from "../components/BmCases";
 import Footer from "../components/Footer";
-
+import { useEffect } from "react";
 function Cases({ caseData }) {
   /*   console.log(caseData); */
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <div className="case-page-wrapper">

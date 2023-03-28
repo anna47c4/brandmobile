@@ -1,6 +1,7 @@
 import "./index.scss";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 /* import { createBrowserRouter, RouterProvider } from "react-router-dom"; */
+import { useEffect } from "react";
 import Layout from "./pages/Layout";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
@@ -31,6 +32,10 @@ export function App() {
       loader: caseLoader,
     },
   ]); */
+  /*  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []); */
+  /*   window.scrollTo(0, 0); */
   return (
     <>
       {/*    <RouterProvider router={router} /> */}

@@ -5,7 +5,11 @@ import HeroSection from "../components/HeroSection";
 import SecondSection from "../components/SecondSection";
 import ThirdSection from "../components/ThirdSection";
 import Footer from "../components/Footer";
+import { useEffect } from "react";
 function Home() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <main>

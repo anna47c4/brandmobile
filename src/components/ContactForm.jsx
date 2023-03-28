@@ -11,8 +11,8 @@ function ContactForm() {
             <input required minLength="1" type="name" name="name" id="name" />
           </div>
           <div className="form-control">
-            <label htmlFor="form-email">E-mail</label>
-            <input required type="email" name="email" id="form-email" />
+            <label htmlFor="email">E-mail</label>
+            <input required type="email" name="email" id="email" />
           </div>
           <div className="form-control">
             <label htmlFor="message">Message</label>

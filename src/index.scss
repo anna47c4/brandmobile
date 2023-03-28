@@ -418,6 +418,13 @@ footer {
     }
   }
 }
+//Footer DESKTOP micro changes
+@media (min-width: 767px) {
+  footer {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
 /////////////////////DESKTOP STYLING//////////////////
 //HeroSection HOMEPAGE
 @media (min-width: 767px) {
@@ -715,8 +722,10 @@ footer {
   //heroSection on CASE page
   .caseHeroSection {
     background: url("./assets/svg/case-bg-bm2.svg");
-    background-position: 60% 60%;
-    height: 50vh;
+    background-size: cover;
+    /*   background-position: 60% 60%; */
+    height: 40vh;
+    background-color: $color-main-blue;
     .caseHeroText {
       p {
         font-size: $fontsize-5;
@@ -904,27 +913,20 @@ footer {
     }
   }
 }
-//////////////CONTACT PAGE////////////
+//////////////CONTACT PAGE MOBILESTYLING STARTS HERE////////////
 .contactSection {
-  /*   display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: grid;
   grid-gap: 8px;
   margin: 15px;
-  padding: 15px; */
+  padding: 15px;
   margin: 0;
   padding: 0;
-  div {
-    .test-img {
-      max-width: 100%;
-    }
-  }
 
   form {
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 50px;
     /*     margin: 0 0 2rem; */
-
     fieldset {
       border: 0;
       padding: 0;
@@ -958,9 +960,11 @@ footer {
           -webkit-box-shadow: -4px 6px 10px 0px rgba(0, 0, 0, 0.17);
           -moz-box-shadow: -4px 6px 10px 0px rgba(0, 0, 0, 0.17);
         }
+        //the little checkbox
         #my-id {
           appearance: normal;
         }
+        //pseudoselectors on form
         textarea:focus,
         input:focus {
           background-color: #3b46965d;
@@ -970,13 +974,13 @@ footer {
           transition: 5000s background 0s !important;
         }
         input[type="name"]:valid {
-          background-color: rgba(87, 183, 87, 0.67);
+          background-color: rgba(87, 183, 87, 0.472);
         }
         input[type="email"]:valid {
-          background-color: rgba(87, 183, 87, 0.67);
+          background-color: rgba(87, 183, 87, 0.472);
         }
         textarea:valid {
-          background-color: rgba(87, 183, 87, 0.67);
+          background-color: rgba(87, 183, 87, 0.472);
         }
       }
     }
@@ -1004,14 +1008,13 @@ footer {
         accent-color: $color-main-blue;
       }
     }
+    //submit form btn
     button {
       margin-top: 15px;
       align-self: baseline;
     }
-    input:valid {
-      background-color: rgba(93, 192, 93, 0.545);
-    }
   }
+  //top section of contact page
   .box {
     background-image: url("./assets/bm-print-true.png");
     background-size: cover;
@@ -1025,6 +1028,7 @@ footer {
       color: $color-main-black;
       text-align: center;
     }
+    //"heading" - let's work together
     .p-top {
       font-size: $fontsize-2;
       padding: 20px;

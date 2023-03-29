@@ -5,6 +5,7 @@ import PrimaryButton from "../components/PrimaryButton";
 import Footer from "../components/Footer";
 import CaseLogos from "../components/CaseLogos";
 import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 
 function SoloProject({ caseData }) {
   //so the page scrolls to top when mounted
@@ -27,71 +28,94 @@ function SoloProject({ caseData }) {
   }
 
   //shared class for images / video
-  const imgclass = `img-data ${theCase.company}`;
-
+  const imgclass = `img-data ${theCase.company} ${theCase.id}`;
+  const videoclass = `${theCase.id}`;
+  //shared style for bg image on specific case
+  /*  let style = {
+    backgroundImage: "url(" + theCase.heroimg + ")",
+  }; */
+  //
+  let style = {
+    backgroundImage: "url(" + theCase.heroimg + ")",
+    backgroundSize: "cover",
+  };
   return (
     <>
+      <Helmet>
+        <title>BrandMobile - Case</title>
+        <meta name="description" content="BrandMobile case" />
+        <meta
+          name="keywords"
+          content="Webdesign, Platform, Concept, Development"
+        />
+      </Helmet>
       <section className="soloSection">
-        <div className="top-img">
-          {!theCase.heroimg && (
-            <video
-              src={theCase.herovideo}
-              alt={theCase.company}
-              className={imgclass}
-              autoPlay
-              muted
-              loop
-            ></video>
-          )}
-          {theCase.heroimg && (
-            <img
-              src={theCase.heroimg}
-              alt={theCase.company}
-              className={imgclass}
-            ></img>
-          )}
-        </div>
-        <div className="top-container">
-          <div className="logo">
-            {!theCase.logo && <p>no logo.</p>}{" "}
-            {theCase.logo && (
-              <img
-                src={theCase.logo}
+        <div className="top-wrapper">
+          <div className="top-img box">
+            {!theCase.heroimg && (
+              <video
+                src={theCase.herovideo}
                 alt={theCase.company}
-                className={theCase.id}
+                className={imgclass}
+                autoPlay
+                muted
+                loop
+              ></video>
+            )}
+            {theCase.heroimg && (
+              <img
+                src={theCase.heroimg}
+                alt={theCase.company}
+                className={imgclass}
               ></img>
             )}
           </div>
-          <div className="story">
-            <p style={{ textTransform: "uppercase" }}>{theCase.story}</p>
+          <div className="right-wrapper">
+            <div className="top-container">
+              <div className="logo">
+                {!theCase.logo && <p>no logo.</p>}{" "}
+                {theCase.logo && (
+                  <img
+                    src={theCase.logo}
+                    alt={theCase.company}
+                    className={theCase.id}
+                  ></img>
+                )}
+              </div>
+              <div className="story">
+                <p style={{ textTransform: "uppercase" }}>{theCase.story}</p>
+              </div>
+            </div>
+            <div className="case-txt">
+              <h1>{theCase.intro}</h1>
+              <p className="break-line">{theCase.longdesc}</p>
+            </div>
+            <div className="btn">
+              <PrimaryButton
+                desc={"GET IN TOUCH"}
+                clickAction={goToContact}
+              ></PrimaryButton>
+            </div>
           </div>
-        </div>
-        <div className="case-txt">
-          <h1>{theCase.intro}</h1>
-          <p className="break-line">{theCase.longdesc}</p>
-        </div>
-        <div className="btn">
-          <PrimaryButton
-            desc={"GET IN TOUCH"}
-            clickAction={goToContact}
-          ></PrimaryButton>
         </div>
         <div className="numbers"></div>
-        <div className="case-video">
-          <div className="phone-container">
-            <video autoPlay muted loop src={theCase.video}></video>
-          </div>
-        </div>
-        <div className="results">
-          {theCase.results.resulttitle.map((title, i) => (
-            <div>
-              <div className="ico-txt-group">
-                <img src={theCase.results.resultico[i]}></img>
-                <p>{title}</p>
-              </div>
-              <p>{theCase.results.resulttext[i]}</p>
+        <div className="result-wrapper">
+          <div className="case-video">
+            <div className="phone-container">
+              <video autoPlay muted loop src={theCase.video}></video>
             </div>
-          ))}
+          </div>
+          <div className="results">
+            {theCase.results.resulttitle.map((title, i) => (
+              <div>
+                <div className="ico-txt-group">
+                  <img src={theCase.results.resultico[i]}></img>
+                  <p>{title}</p>
+                </div>
+                <p>{theCase.results.resulttext[i]}</p>
+              </div>
+            ))}
+          </div>
         </div>
         <div className="txt">
           <h2>We have worked with some of the top brands across the globe</h2>

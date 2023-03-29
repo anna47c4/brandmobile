@@ -1,10 +1,16 @@
 import React from "react";
 import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 function PrivacyPolicy() {
   //so the page scrolls to top when mounted
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  <Helmet>
+    <title>BrandMobile - Privacy Policy</title>
+    <meta name="description" content="BrandMobile ApS privacy policy" />
+    <meta name="keywords" content="Webdesign, Platform, Concept, Development" />
+  </Helmet>;
   return (
     <>
       <section className="privacyPol">

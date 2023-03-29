@@ -1,6 +1,7 @@
 import BmCases from "../components/BmCases";
 import Footer from "../components/Footer";
 import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 function Cases({ caseData }) {
   /*   console.log(caseData); */
   useEffect(() => {
@@ -8,6 +9,14 @@ function Cases({ caseData }) {
   }, []);
   return (
     <>
+      <Helmet>
+        <title>BrandMobile - Cases</title>
+        <meta name="description" content="BrandMobile cases" />
+        <meta
+          name="keywords"
+          content="Webdesign, Platform, Concept, Development"
+        />
+      </Helmet>
       <div className="case-page-wrapper">
         <section className="caseHeroSection">
           <div className="caseHeroText center-place-dir">

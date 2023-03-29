@@ -785,10 +785,17 @@ footer {
 //////////////////SOLOPROJECT PAGE MOBILE STYLING STARTS HERE//////////////////
 .soloSection {
   padding: 0;
-  .top-img {
-    .img-data {
-      width: 100%;
-    }
+  /*   .top-img {
+    width: 100vw;
+    height: 40vh; 
+     .circklek {
+      object-fit: cover;
+      overflow-clip-margin: unset;
+      overflow: unset;
+    } */
+  .img-data {
+    width: 100%;
+    height: auto;
   }
   .top-container {
     padding: 10px;
@@ -915,6 +922,50 @@ footer {
     }
     .big-logo.arla {
       width: 40%;
+    }
+  }
+}
+/////SOLOPROJECT DESKTOP STYLES////////
+@media (min-width: 767px) {
+  .soloSection {
+    .top-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      /* .box {
+        --mask: radial-gradient(
+              93.91px at calc(100% - 126px) 50%,
+              #000 99%,
+              #0000 101%
+            )
+            0 calc(50% - 84px) / 100% 168px,
+          radial-gradient(
+              93.91px at calc(100% + 84px) 50%,
+              #0000 99%,
+              #000 101%
+            )
+            calc(100% - 42px) 50%/100% 168px repeat-y;
+        -webkit-mask: var(--mask);
+        mask: var(--mask);
+      } */
+      .box {
+        --mask: radial-gradient(
+              134.16px at calc(100% - 180px) 50%,
+              #000 99%,
+              #0000 101%
+            )
+            0 calc(50% - 120px) / 100% 240px,
+          radial-gradient(
+              134.16px at calc(100% + 120px) 50%,
+              #0000 99%,
+              #000 101%
+            )
+            calc(100% - 60px) 50%/100% 240px repeat-y;
+        -webkit-mask: var(--mask);
+        mask: var(--mask);
+      }
+      .danskespil {
+        width: 100%;
+      }
     }
   }
 }

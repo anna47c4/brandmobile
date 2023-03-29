@@ -1,6 +1,7 @@
 import ContactForm from "../components/ContactForm";
 import Footer from "../components/Footer";
 import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 function Contact() {
   //so the page scrolls to top when mounted
   useEffect(() => {
@@ -8,6 +9,14 @@ function Contact() {
   }, []);
   return (
     <>
+      <Helmet>
+        <title>BrandMobile - Contact</title>
+        <meta name="description" content="BrandMobile contact" />
+        <meta
+          name="keywords"
+          content="Webdesign, Platform, Concept, Development"
+        />
+      </Helmet>
       <section className="contactSection">
         <main>
           <div className="box">

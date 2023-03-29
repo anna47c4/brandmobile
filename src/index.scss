@@ -992,6 +992,10 @@ footer {
         max-width: 500px;
       }
     }
+    //wrapping the last part of the soloProject page to set a mutual bg color
+    .wrapper {
+      background-color: $color-main-purple;
+    }
     .txt {
       display: flex;
       align-items: center;
@@ -1013,15 +1017,20 @@ footer {
       justify-content: center;
       padding-bottom: 50px;
       .inner-container {
-        width: 800px;
+        width: 900px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
         gap: 8px;
+        background-color: white;
+        border-radius: 12px;
+        box-shadow: -4px 6px 10px 0px rgba(0, 0, 0, 0.17);
+        -webkit-box-shadow: -4px 6px 10px 0px rgba(0, 0, 0, 0.17);
+        -moz-box-shadow: -4px 6px 10px 0px rgba(0, 0, 0, 0.17);
         div {
-          width: 150px;
-          height: 150px;
-          background: $color-main-purple;
+          width: 200px;
+          height: 200px;
+          background: transparent;
           margin: 2px;
           /* test: shared div styles */
           background-size: contain;

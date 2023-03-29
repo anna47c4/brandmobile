@@ -131,35 +131,37 @@ function SoloProject({ caseData }) {
             ))}
           </div>
         </div>
-        <div className="txt">
-          <h2>We have worked with some of the top brands across the globe</h2>
-          <p>And we would love to help you too</p>
-        </div>
-        <Media
-          query="(min-width: 767px)"
-          render={() => (
-            <div className="logo-container-desk">
-              <div className="inner-container">
-                <div className="mash"></div>
-                <div className="ft"></div>
-                <div className="ds"></div>
-                <div className="ck"></div>
-                <div className="arla"></div>
-                <div className="imerco"></div>
-                <div className="bt"></div>
-                <div className="cb"></div>
+        <div className="wrapper">
+          <div className="txt">
+            <h2>We have worked with some of the top brands across the globe</h2>
+            <p>And we would love to help you too</p>
+          </div>
+          <Media
+            query="(min-width: 767px)"
+            render={() => (
+              <div className="logo-container-desk">
+                <div className="inner-container">
+                  <div className="mash"></div>
+                  <div className="ft"></div>
+                  <div className="ds"></div>
+                  <div className="ck"></div>
+                  <div className="arla"></div>
+                  <div className="imerco"></div>
+                  <div className="bt"></div>
+                  <div className="cb"></div>
+                </div>
               </div>
-            </div>
-          )}
-        />
-        <Media
-          query="(max-width: 767px)"
-          render={() => (
-            <div className="logo-container">
-              <CaseLogos></CaseLogos>
-            </div>
-          )}
-        />
+            )}
+          />
+          <Media
+            query="(max-width: 767px)"
+            render={() => (
+              <div className="logo-container">
+                <CaseLogos></CaseLogos>
+              </div>
+            )}
+          />
+        </div>
       </section>
       <Footer></Footer>
     </>

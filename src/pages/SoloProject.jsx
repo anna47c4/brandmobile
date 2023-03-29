@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import CaseLogos from "../components/CaseLogos";
 import { useEffect } from "react";
 import { Helmet } from "react-helmet";
+import Media from "react-media";
 
 function SoloProject({ caseData }) {
   //so the page scrolls to top when mounted
@@ -51,7 +52,25 @@ function SoloProject({ caseData }) {
       </Helmet>
       <section className="soloSection">
         <div className="top-wrapper">
-          <div className="top-img box">
+          <Media
+            query="(min-width: 767px)"
+            render={() => <div className="top-img box" style={style}></div>}
+          />
+          <Media
+            query="(max-width: 767px)"
+            render={() => (
+              <div className="top-img">
+                {theCase.heroimg && (
+                  <img
+                    src={theCase.heroimg}
+                    alt={theCase.company}
+                    className={imgclass}
+                  ></img>
+                )}
+              </div>
+            )}
+          />
+          {/*  <div className="top-img box">
             {!theCase.heroimg && (
               <video
                 src={theCase.herovideo}
@@ -69,7 +88,7 @@ function SoloProject({ caseData }) {
                 className={imgclass}
               ></img>
             )}
-          </div>
+          </div> */}
           <div className="right-wrapper">
             <div className="top-container">
               <div className="logo">

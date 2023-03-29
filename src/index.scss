@@ -931,7 +931,7 @@ footer {
     .top-wrapper {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      /* .box {
+      .box {
         --mask: radial-gradient(
               93.91px at calc(100% - 126px) 50%,
               #000 99%,
@@ -946,8 +946,8 @@ footer {
             calc(100% - 42px) 50%/100% 168px repeat-y;
         -webkit-mask: var(--mask);
         mask: var(--mask);
-      } */
-      .box {
+      }
+      /*       .box {
         --mask: radial-gradient(
               134.16px at calc(100% - 180px) 50%,
               #000 99%,
@@ -962,7 +962,7 @@ footer {
             calc(100% - 60px) 50%/100% 240px repeat-y;
         -webkit-mask: var(--mask);
         mask: var(--mask);
-      }
+      } */
       .danskespil {
         width: 100%;
       }

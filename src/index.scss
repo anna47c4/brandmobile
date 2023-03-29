@@ -159,12 +159,42 @@ p {
 //////////////////////STYLING AF HOMEPAGE SECTIONS/////////////////////////////
 /* MOBILE FIRST, DESKTOP TILPASNINGER KOMMER LÆNGERE NEDE MED @media */
 //////////////////////////////////////////////////////////////////////////////
-//'HeroSection' PÅ HOMEPAGE
+/////////'HeroSection' PÅ HOMEPAGE/////////
+//test, this .hero-box should only apply on a bigger screen
+@media (min-width: 767px) {
+  .hero-box {
+    --mask: radial-gradient(
+          261.62px at 50% calc(100% - 351px),
+          #000 99%,
+          #0000 101%
+        )
+        calc(50% - 234px) 0/468px 100%,
+      radial-gradient(261.62px at 50% calc(100% + 234px), #0000 99%, #000 101%)
+        50% calc(100% - 117px) / 468px 100% repeat-x;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+    height: 80vh;
+  }
+  .second-box {
+    --mask: radial-gradient(167.71px at 50% 225px, #000 99%, #0000 101%)
+        calc(50% - 150px) 0/300px 51% repeat-x,
+      radial-gradient(167.71px at 50% -150px, #0000 99%, #000 101%) 50% 75px/300px
+        calc(51% - 75px) repeat-x,
+      radial-gradient(167.71px at 50% calc(100% - 225px), #000 99%, #0000 101%)
+        calc(50% - 150px) 100%/300px 51% repeat-x,
+      radial-gradient(167.71px at 50% calc(100% + 150px), #0000 99%, #000 101%)
+        50% calc(100% - 75px) / 300px calc(51% - 75px) repeat-x;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+  }
+}
+
 .heroSection {
-  background: url("./assets/bg.svg");
-  background-position: 20% 90%;
-  /*   background-position: bottom; */ //til desktop når det er
+  /*   background: url("./assets/bg.svg");
+  background-size: contain; */
+  background-color: $color-main-blue;
   padding-bottom: 50px;
+
   .heroText {
     line-height: 41px;
     letter-spacing: 1px;
@@ -232,6 +262,10 @@ p {
   }
 }
 //'SecondSection' PÅ HOMEPAGE
+.wrap {
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
 .secondSection {
   background: url("./assets/svg/purple-bg-01.svg");
   /*  background-position: 20% 50%; */
@@ -947,24 +981,78 @@ footer {
         -webkit-mask: var(--mask);
         mask: var(--mask);
       }
-      /*       .box {
-        --mask: radial-gradient(
-              134.16px at calc(100% - 180px) 50%,
-              #000 99%,
-              #0000 101%
-            )
-            0 calc(50% - 120px) / 100% 240px,
-          radial-gradient(
-              134.16px at calc(100% + 120px) 50%,
-              #0000 99%,
-              #000 101%
-            )
-            calc(100% - 60px) 50%/100% 240px repeat-y;
-        -webkit-mask: var(--mask);
-        mask: var(--mask);
-      } */
       .danskespil {
         width: 100%;
+      }
+    }
+    .result-wrapper {
+      display: flex;
+      justify-content: space-evenly;
+      .results {
+        max-width: 500px;
+      }
+    }
+    .txt {
+      display: flex;
+      align-items: center;
+      h2 {
+        max-width: 600px;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 50px;
+        letter-spacing: -0.7px;
+      }
+      p {
+        font-size: $fontsize-4;
+      }
+    }
+    //the logos in the last section of the soloproject page
+    .logo-container-desk {
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      padding-bottom: 50px;
+      .inner-container {
+        width: 800px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 8px;
+        div {
+          width: 150px;
+          height: 150px;
+          background: $color-main-purple;
+          margin: 2px;
+          /* test: shared div styles */
+          background-size: contain;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+        //each box. w the logo set as background image to place them in a flex layout
+        .mash {
+          background-image: url(./assets/caseAssets/mash-logo.webp);
+        }
+        .ft {
+          background-image: url(./assets/caseAssets/tiger.webp);
+        }
+        .ds {
+          background-image: url(./assets/caseAssets/ds.webp);
+        }
+        .ck {
+          background-image: url(./assets/caseAssets/ck.webp);
+        }
+        .arla {
+          background-image: url(./assets/caseAssets/arla.webp);
+        }
+        .imerco {
+          background-image: url(./assets/caseAssets/imerco.webp);
+        }
+        .bt {
+          background-image: url(./assets/caseAssets/bt.webp);
+        }
+        .cb {
+          background-image: url(./assets/caseAssets/carlsberg.webp);
+        }
       }
     }
   }

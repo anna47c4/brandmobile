@@ -28,14 +28,9 @@ function SoloProject({ caseData }) {
     navigate("../contact");
   }
 
-  //shared class for images / video
+  //shared class for images
   const imgclass = `img-data ${theCase.company} ${theCase.id}`;
-  const videoclass = `${theCase.id}`;
-  //shared style for bg image on specific case
-  /*  let style = {
-    backgroundImage: "url(" + theCase.heroimg + ")",
-  }; */
-  //
+  //for putting the heroimg as background on big screen
   let style = {
     backgroundImage: "url(" + theCase.heroimg + ")",
     backgroundSize: "cover",
@@ -140,9 +135,31 @@ function SoloProject({ caseData }) {
           <h2>We have worked with some of the top brands across the globe</h2>
           <p>And we would love to help you too</p>
         </div>
-        <div className="logo-container">
-          <CaseLogos></CaseLogos>
-        </div>
+        <Media
+          query="(min-width: 767px)"
+          render={() => (
+            <div className="logo-container-desk">
+              <div className="inner-container">
+                <div className="mash"></div>
+                <div className="ft"></div>
+                <div className="ds"></div>
+                <div className="ck"></div>
+                <div className="arla"></div>
+                <div className="imerco"></div>
+                <div className="bt"></div>
+                <div className="cb"></div>
+              </div>
+            </div>
+          )}
+        />
+        <Media
+          query="(max-width: 767px)"
+          render={() => (
+            <div className="logo-container">
+              <CaseLogos></CaseLogos>
+            </div>
+          )}
+        />
       </section>
       <Footer></Footer>
     </>

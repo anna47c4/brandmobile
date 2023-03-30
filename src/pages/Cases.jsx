@@ -2,6 +2,7 @@ import BmCases from "../components/BmCases";
 import Footer from "../components/Footer";
 import { useEffect } from "react";
 import { Helmet } from "react-helmet";
+import WhiteIcon from "../assets/bm-ico-white.webp";
 function Cases({ caseData }) {
   /*   console.log(caseData); */
   useEffect(() => {
@@ -20,8 +21,19 @@ function Cases({ caseData }) {
       <div className="case-page-wrapper">
         <section className="caseHeroSection">
           <div className="caseHeroText center-place-dir">
-            <p>Engagement that moves your Brand.</p>
-            <h1>Some cases for your inspiration</h1>
+            <p>
+              {" "}
+              <img
+                src={WhiteIcon}
+                className="bm-ico-white"
+                alt="Brandmobile white icon"
+                style={{ width: "20px" }}
+              ></img>
+              Engagement that moves your Brand.
+            </p>
+            <h1>
+              Some cases for your <br></br> inspiration
+            </h1>
           </div>
         </section>
         <main>

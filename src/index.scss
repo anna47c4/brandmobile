@@ -1,12 +1,12 @@
 //STYLING LOGIK:
-//- al general styling er øverst
+//- General styling er øverst
 //- overskrift ved de forskellige ting f.eks. "NAV STYLING"
+// - få generelle steder for desktop adaptions, men primært ligger desktop adaptions i sammenhæng med elementets mobile styling
 
-//VARIABLES
+//VARIABLES//
 ///////////////
-
 // font-family:
-$mulish: "Mulish", sans-serif; /* Google font linked up in index.html */
+$mulish: "Mulish", Arial, Helvetica, sans-serif; /* Google font linked up in index.html, fallback fonts */
 //colors:
 $color-main-black: #303132;
 $color-main-white: /* #f2f0f0 */ #ffff;
@@ -14,6 +14,7 @@ $color-main-blue: #3b4696;
 $color-main-purple: #afb2d7;
 $color-p: #3031329c;
 $color-blue-opacity: #3b4696c0;
+
 //font-size:
 $fontsize-1: 2.488rem;
 $fontsize-2: 2.074rem;
@@ -161,7 +162,7 @@ p {
 //////////////////////////////////////////////////////////////////////////////
 /////////'HeroSection' PÅ HOMEPAGE/////////
 //test, this .hero-box should only apply on a bigger screen
-@media (min-width: 767px) {
+/* @media (min-width: 767px) {
   .hero-box {
     --mask: radial-gradient(
           261.62px at 50% calc(100% - 351px),
@@ -187,11 +188,11 @@ p {
     -webkit-mask: var(--mask);
     mask: var(--mask);
   }
-}
+} */
 
 .heroSection {
-  /*   background: url("./assets/bg.svg");
-  background-size: contain; */
+  background: url("./assets/svg/test-hehe-01.svg");
+  background-size: cover;
   background-color: $color-main-blue;
   padding-bottom: 50px;
 
@@ -599,20 +600,22 @@ footer {
         width: 500px;
       }
     }
-    //second part of the thirdSection
-    .case-examples {
-      .heading-container {
-        h2,
-        span {
-          font-size: $fontsize-1;
-          font-weight: 800;
-          line-height: 60px;
-        }
-      }
-    }
+
     .case-container {
       display: grid;
       justify-content: center;
+      width: 100vw;
+      //second part of the thirdSection
+      .case-examples {
+        .heading-container {
+          h2,
+          span {
+            font-size: $fontsize-1;
+            font-weight: 800;
+            line-height: 60px;
+          }
+        }
+      }
       .case-videos {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
@@ -760,15 +763,21 @@ footer {
 .case-page-wrapper {
   //heroSection on CASE page
   .caseHeroSection {
-    background: url("./assets/svg/case-bg-bm2.svg");
+    /*     background: url("./assets/svg/case-bg-bm2.svg"); */
+    background-image: url(./assets/svg/test-hehe-01.svg);
     background-size: cover;
-    /*   background-position: 60% 60%; */
-    height: 40vh;
+    height: 50vh;
     background-color: $color-main-blue;
     .caseHeroText {
       p {
+        .bm-ico-white {
+          margin-top: -2px;
+          height: 25px;
+          transform: rotate(140deg);
+          margin-right: 6px;
+        }
         font-size: $fontsize-5;
-        color: rgba(255, 255, 255, 0.811);
+        color: $color-main-white;
         font-style: italic;
         text-align: center;
         padding-top: 30px;
@@ -778,6 +787,8 @@ footer {
         padding-left: 15px;
         text-align: center;
         font-weight: 900;
+        line-height: 65px;
+        letter-spacing: -1px;
         color: $color-main-white;
       }
     }
@@ -812,6 +823,27 @@ footer {
         vertical-align: bottom;
         align-self: bottom;
         margin: auto;
+      }
+    }
+  }
+}
+////// CASE PAGE - DESKTOP ADAPTIONS/////////
+@media (min-width: 767px) {
+  .case-page-wrapper {
+    .caseHeroSection {
+      .caseHeroText {
+        p {
+          .bm-ico-white {
+            margin-bottom: -3px;
+            height: 25px;
+            transform: rotate(140deg);
+            margin-right: 6px;
+          }
+          font-size: $fontsize-4;
+        }
+        h1 {
+          font-size: 3.5rem;
+        }
       }
     }
   }
@@ -992,6 +1024,17 @@ footer {
         max-width: 500px;
       }
     }
+    //top txt font-size adaption
+    .case-txt {
+      h1 {
+        font-size: $fontsize-3;
+        line-height: 42px;
+        letter-spacing: -1px;
+      }
+      p {
+        font-size: $fontsize-text;
+      }
+    }
     //wrapping the last part of the soloProject page to set a mutual bg color
     .wrapper {
       background-color: $color-main-purple;
@@ -1069,15 +1112,17 @@ footer {
 //////////////CONTACT PAGE MOBILESTYLING STARTS HERE////////////
 .contactSection {
   display: grid;
+  background-image: url("./assets/bm-print-true.png");
+  background-size: cover;
   grid-gap: 8px;
-  margin: 15px;
-  padding: 15px;
   margin: 0;
   padding: 0;
 
   form {
-    padding-left: 20px;
-    padding-right: 20px;
+    background-color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 6px;
     padding-bottom: 50px;
     /*     margin: 0 0 2rem; */
     fieldset {
@@ -1169,8 +1214,10 @@ footer {
   }
   //top section of contact page
   .box {
-    background-image: url("./assets/bm-print-true.png");
-    background-size: cover;
+    display: grid;
+    justify-content: center;
+    /*     background-image: url("./assets/bm-print-true.png");
+    background-size: cover; */
     margin: 0;
     padding: 0;
     width: 100%;
@@ -1186,10 +1233,12 @@ footer {
       font-size: $fontsize-2;
       padding: 20px;
       padding-top: 30px;
-      font-weight: 700;
+      font-weight: 900;
     }
     .p-bottom {
       padding: 20px;
+
+      font-size: $fontsize-text;
       span {
         color: $color-main-blue;
         font-style: italic;
@@ -1197,6 +1246,37 @@ footer {
     }
   }
 }
+///////CONTACT PAGE - DESKTOP ADAPTIONS////////
+@media (min-width: 767px) {
+  .contactSection {
+    width: 100vw;
+    .form-wrapper {
+      display: grid;
+      justify-content: center;
+      width: 100vw;
+      form {
+        max-width: 800px;
+      }
+    }
+    .box {
+      .p-top {
+        font-size: $fontsize-1;
+        padding-top: 50px;
+        font-weight: 900;
+      }
+      .p-bottom {
+        font-size: $fontsize-5;
+        inline-size: 800px;
+        padding: 0;
+        span {
+          color: $color-main-blue;
+          font-style: italic;
+        }
+      }
+    }
+  }
+}
+
 ////////////////////PRIVACY POLICY MOBILE STYLING////////////////////
 .privacyPol {
   /*   display: grid;
@@ -1220,13 +1300,79 @@ footer {
     }
   }
 }
-//desktop adaptions
+//desktop adaptions for privacy policy
 @media (min-width: 762px) {
   .privacyPol {
     display: grid;
     justify-content: center;
     .privacy-wrapper {
       max-width: 900px;
+    }
+  }
+}
+//error page
+.error-page {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  background-image: url(./assets/bg-p.svg);
+  background-size: cover;
+  background-color: $color-main-blue;
+  .heading {
+    h1 {
+      font-size: 3rem;
+      letter-spacing: -1px;
+      font-weight: 700;
+      line-height: 50px;
+      padding-top: 30px;
+    }
+  }
+  .txt {
+    inline-size: 300px;
+    line-height: 1.8rem;
+    height: 100vh;
+    a {
+      text-decoration: none;
+      color: $color-main-blue;
+    }
+    a:hover {
+      font-weight: 700;
+    }
+  }
+  .svg {
+    width: 32px;
+    height: 32px;
+    animation: errorAni 6s ease-in 0s infinite alternate-reverse both;
+    @keyframes errorAni {
+      0% {
+        transform: rotate(0);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  }
+}
+///desktop adaptions - errorPage///
+@media (min-width: 767px) {
+  .error-page {
+    .heading {
+      h1 {
+        font-size: 5rem;
+        letter-spacing: -1px;
+        font-weight: 700;
+        line-height: 50px;
+        padding-top: 50px;
+      }
+    }
+    svg.svg {
+      width: 68px;
+      height: 68px;
+    }
+    .txt {
+      inline-size: 600px;
+      font-size: $fontsize-5;
     }
   }
 }

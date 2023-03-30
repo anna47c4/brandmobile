@@ -25,7 +25,7 @@ function ContactForm() {
             />
           </div>
           <div className="form-control-check">
-            <input type="checkbox" id="my-id"></input>
+            <input type="checkbox" id="my-id" required></input>
             <label for="my-id">
               By checking this box, you consent to sending your details to us
               over email. For more info check our{" "}

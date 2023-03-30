@@ -28,7 +28,7 @@ function Contact() {
               the form, and we will respond to you as soon as possible.
             </p>
           </div>
-          <div>
+          <div className="form-wrapper">
             {" "}
             <ContactForm></ContactForm>
           </div>

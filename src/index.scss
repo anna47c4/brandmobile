@@ -161,7 +161,7 @@ p {
 /* MOBILE FIRST, DESKTOP TILPASNINGER KOMMER LÆNGERE NEDE MED @media */
 //////////////////////////////////////////////////////////////////////////////
 /////////'HeroSection' PÅ HOMEPAGE/////////
-//test, this .hero-box should only apply on a bigger screen
+//test, this .hero-box should only apply on a ger screen
 /* @media (min-width: 767px) {
   .hero-box {
     --mask: radial-gradient(
@@ -195,7 +195,6 @@ p {
   background-size: cover;
   background-color: $color-main-blue;
   padding-bottom: 50px;
-
   .heroText {
     line-height: 41px;
     letter-spacing: 1px;
@@ -271,6 +270,7 @@ p {
   background: url("./assets/svg/purple-bg-01.svg");
   /*  background-position: 20% 50%; */
   background-position: 0% 0%;
+
   div.text {
     text-align: left;
     margin: 15px;
@@ -984,10 +984,10 @@ footer {
     padding-bottom: 100px;
     gap: 8px;
     .big-logo {
-      width: 60%;
+      width: 50%;
     }
     .big-logo.arla {
-      width: 40%;
+      width: 30%;
     }
   }
 }

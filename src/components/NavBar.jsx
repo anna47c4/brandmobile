@@ -86,17 +86,17 @@ function Navbar() {
         <ul>
           <li>
             <Link onClick={isClicked} to="/">
-              Home
+              HOME
             </Link>
           </li>
           <li>
             <Link onClick={isClicked} to="/cases">
-              Cases
+              CASES
             </Link>
           </li>
           <li>
             <Link onClick={isClicked} to="/contact">
-              Contact
+              CONTACT
             </Link>
           </li>
         </ul>
@@ -116,6 +116,7 @@ function Navbar() {
           margin-right: 20px;
           padding: 0;
           overflow: hidden;
+          gap: 6px;
         }
         .navigation ul li {
           list-style-type: none;

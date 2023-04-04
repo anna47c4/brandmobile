@@ -9,7 +9,7 @@
 $mulish: "Mulish", Arial, Helvetica, sans-serif; /* Google font linked up in index.html, fallback fonts */
 //colors:
 $color-main-black: #303132;
-$color-main-white: /* #f2f0f0 */ #ffff;
+$color-main-white: #ffff; //accessibility-vise havde det været bedre med en farve der ikke er helt hvid, men så var der elementer der ikke passede pænt sammen i farvene, så derfor er den helt hvid
 $color-main-blue: #3b4696;
 $color-main-purple: #afb2d7;
 $color-p: #3031329c;
@@ -40,10 +40,9 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
-
-//HUSK AT FORHOLD DIG TIL DET HER.
-main {
-  /*   max-width: 1600px; */
+//så der kan zoomes uden at layoutet bliver mærkeligt
+body {
+  max-width: 2500px;
   margin: 0 auto;
 }
 
@@ -924,6 +923,9 @@ footer {
     width: 100%;
     height: 50vh;
     background-color: $color-main-blue;
+  }
+  .ckpg {
+    width: 50%;
   }
   .case-video {
     .phone-container {

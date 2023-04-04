@@ -273,34 +273,32 @@
     }
   },
   {
-    "id": "bestseller",
-    "company": "Bestseller",
-    "title": "Driving store traffic in multiple markets",
-    "desc": "We have delivered mobile voucher solutions for Nameit and Vero Moda in over 6 countries in Europe.",
-    "img": "images/bestseller.webp",
-    "heroimg": "/images/bestseller-case.webp",
-    "video": "/images/bestseller-result.webm",
-    "story": "The bestseller story",
-    "intro": "It all started with a new Bestseller app.",
-    "longdesc": "But apps do not always activate the consumers and stimulate engagement and sales as intended. We have for both Vero Moda and Nameit brands, in multiple European markets delivered mechanics working the Bestseller App environment. \n\n At the same time, we also offered a solution activating consumers outside the app – but driving app downloads and more traffic within the app. The uplift in campaign periods for app usage surpassed over 200%. \n\n Countries: Ireland, Denmark, Austria, Netherlands, Finland, Norway",
+    "id": "ckpg",
+    "company": "Circkle K x Niantic",
+    "title": "Innovative & engaging partnership",
+    "desc": "Award winning Circkle K x Pokémon GO partnership. Circkle K took home the coveted sponsorship for the innovative partnership and we are happy to have executed that.",
+    "img": "images/pokemon.webp",
+    "heroimg": "/images/pokemon-case-splash.webp",
+    "mainimg": "/images/ckpgFlow_2.webp",
+    "logo": "/images/ck-logo.webp",
+    "story": "The Circkle K x Pokémon GO story",
+    "intro": "Visiting sponsored PokéStops & Gyms in Pokémon GO",
+    "longdesc": "You can earn coupons that can be redeemed in Circle K Stores for items like coffee, K Freeze, hot dogs, etc. With this partnership we wanted to activate the consumers and stimulate engagement and sales. \n\n At the same time, we also offered a concept activating consumers both inside and outside the app. The partnership has among other things resulted in app downloads and more traffic within the app. \n\n Countries: USA, Ireland, Denmark, Norway, Sweden",
     "results": {
       "resulttitle": [
-        "Partner coop",
-        "Responsive design",
-        "Dashboard and security",
-        "POS integration"
+        "Innovative partnership",
+        "Engagement & Traffic",
+        "Insightful Dashboard"
       ],
       "resulttext": [
-        "The campaign was initiated by Bestsellers partner delivering push messages in apps.",
-        "The concept works in a number of screen and platform environments. However, the gaming and voucher experience is always better on mobile devices and makes more sense.",
-        "Our Dashboard enables the international marketing department and staff to follow the campaign development in real-time. In terms of security we had a 150 Euro gift card as part of the incentive scheme. That requires a high level of security.",
-        "Our solution was seamlessly integrated in over 300 shops in Europe. Due to the high level of security in our voucher solution the system was easy to implement for staff and management."
+        "The partnership between Circkle K and Niantic Pokémon GO won the 'Innovation of the year Partnership' at the Sponsorship Award in London 2023.",
+        "The concept provides the opportunity to engage with a popular game, while creating a bridge to Circkle K in the form of prizes you can redeem in stores.",
+        "Our Dashboard enables the international marketing department and staff to follow the campaign development in real-time. We strive to present the data as easy to read as possible, and bring the insights that are rewarding for your company."
       ],
       "resultico": [
         "/images/diversity.svg",
-        "/images/devices.svg",
-        "/images/desktop.svg",
-        "/images/person.svg"
+        "/images/magic_exchange.svg",
+        "/images/insights.svg"
       ]
     }
   }

@@ -87,7 +87,6 @@ function SoloProject({ caseData }) {
           <div className="right-wrapper">
             <div className="top-container">
               <div className="logo">
-                {!theCase.logo && <p>no logo.</p>}{" "}
                 {theCase.logo && (
                   <img
                     src={theCase.logo}
@@ -114,6 +113,9 @@ function SoloProject({ caseData }) {
         </div>
         <div className="numbers"></div>
         <div className="result-wrapper">
+          {/*   {!theCase.video && (
+            <img className={theCase.id} src={theCase.mainimg}></img>
+          )} */}
           <div className="case-video">
             <div className="phone-container">
               <video autoPlay muted loop src={theCase.video}></video>

@@ -16,7 +16,7 @@ function FourthSection() {
             </p>
           </div>
           <div className="center-place img-container">
-            <img src={DataImg} className="img" alt="first part data"></img>
+            <img src={DataImg} className="img" alt="first party data"></img>
           </div>
         </div>
         <div className="col2">
@@ -30,7 +30,7 @@ function FourthSection() {
             </p>
           </div>
           <div className="center-place img-container2">
-            <img src={DataImg2} className="img2" alt="first part data"></img>
+            <img src={DataImg2} className="img2" alt="third party data"></img>
           </div>
         </div>
       </section>

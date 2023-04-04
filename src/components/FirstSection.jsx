@@ -55,7 +55,7 @@ function FirstSection() {
                 <img
                   src={BlueIcon}
                   className="blueIcon"
-                  alt="Brandmobile blue icont"
+                  alt="Brandmobile blue icon"
                   style={{ width: "12px" }}
                 ></img>
                 To your website
@@ -64,7 +64,7 @@ function FirstSection() {
                 <img
                   src={BlueIcon}
                   className="blueIcon"
-                  alt="Brandmobile blue icont"
+                  alt="Brandmobile blue icon"
                   style={{ width: "12px" }}
                 ></img>
                 To your campaign
@@ -73,7 +73,7 @@ function FirstSection() {
                 <img
                   src={BlueIcon}
                   className="blueIcon"
-                  alt="Brandmobile blue icont"
+                  alt="Brandmobile blue icon"
                   style={{ width: "12px" }}
                 ></img>
                 To physical locations

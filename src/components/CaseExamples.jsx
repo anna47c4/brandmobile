@@ -15,7 +15,7 @@ function CaseExamples() {
             <video autoPlay muted loop src={cbVideo}></video>
           </div>
           <div className="img-container">
-            <img src={CB} style={{ width: "100px" }}></img>
+            <img src={CB} style={{ width: "100px" }} alt="Carlsberg logo"></img>
           </div>
         </div>
 
@@ -24,7 +24,11 @@ function CaseExamples() {
             <video autoPlay muted loop src={dsVideo}></video>
           </div>
           <div className="img-container">
-            <img src={DS} style={{ width: "100px" }}></img>
+            <img
+              src={DS}
+              style={{ width: "100px" }}
+              alt="Danske spil logo"
+            ></img>
           </div>
         </div>
 
@@ -33,7 +37,7 @@ function CaseExamples() {
             <video autoPlay muted loop src={ckVideo}></video>
           </div>
           <div className="img-container">
-            <img src={CK} style={{ width: "100px" }}></img>
+            <img src={CK} style={{ width: "100px" }} alt="Circkle k logo"></img>
           </div>
         </div>
       </div>

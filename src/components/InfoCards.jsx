@@ -10,7 +10,7 @@ function InfoCards() {
     <>
       <div className="info-cards">
         <article className="card">
-          <img src={LightIco}></img>
+          <img src={LightIco} alt="icon"></img>
           <h3>Tailored UX</h3>
           <p>
             Our solutions are taking advance of new mobile technologies and
@@ -18,7 +18,7 @@ function InfoCards() {
           </p>
         </article>
         <article className="card">
-          <img src={SettingIco}></img>
+          <img src={SettingIco} alt="icon"></img>
           <h3>Tailored Brand identity</h3>
           <p>
             We are extremely passionate about the details and respect the brands
@@ -26,7 +26,7 @@ function InfoCards() {
           </p>
         </article>
         <article className="card">
-          <img src={PhoneIco}></img>
+          <img src={PhoneIco} alt="icon"></img>
           <h3>Mobile First</h3>
           <p>
             Our solutions is always mobile first – but we also support other
@@ -34,7 +34,7 @@ function InfoCards() {
           </p>
         </article>
         <article className="card">
-          <img src={ResultIco}></img>
+          <img src={ResultIco} alt="icon"></img>
           <h3>Live results</h3>
           <p>
             Our campaigns can be monitored in real-time. From activation media
@@ -42,7 +42,7 @@ function InfoCards() {
           </p>
         </article>
         <article className="card">
-          <img src={PlayIco}></img>
+          <img src={PlayIco} alt="icon"></img>
           <h3>Adjust in realtime</h3>
           <p>
             Our platforms is flexible and agile – adding new features on the fly
@@ -50,7 +50,7 @@ function InfoCards() {
           </p>
         </article>
         <article className="card">
-          <img src={KeyIco} className="rotate"></img>
+          <img src={KeyIco} className="rotate" alt="icon"></img>
           <h3>Safe & Sound</h3>
           <p>
             We deliver secure solutions to major brands and are frequently

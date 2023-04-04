@@ -17,7 +17,11 @@ function FifthSection() {
             </p>
           </div>
           <div className="center-place img-container">
-            <img src={CJ} className="img" alt="Customer journey"></img>
+            <img
+              src={CJ}
+              className="img"
+              alt="Customer journey illustration"
+            ></img>
           </div>
         </div>
         <div className="text-wrapper">

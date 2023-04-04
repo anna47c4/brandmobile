@@ -29,7 +29,7 @@ function ThirdSection() {
             <img
               src={ColaCase}
               className="img"
-              alt="Brandmobile circle K case"
+              alt="Brandmobile Circle K case"
             ></img>
           </div>
         </div>

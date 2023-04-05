@@ -216,6 +216,9 @@ p {
   }
   .heroImg {
     margin-top: 20px;
+    img {
+      width: 100%;
+    }
   }
   .bm-ico-white {
     margin-top: -3px;
@@ -471,10 +474,13 @@ footer {
 @media (min-width: 767px) {
   .heroSection {
     background-position: top;
-    display: flex;
-    justify-content: center;
     padding: 20px;
     height: 65vh;
+    .wrap {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      align-items: center;
+    }
   }
   .heroText {
     max-width: 600px;
@@ -1186,7 +1192,7 @@ footer {
         input:-webkit-autofill {
           transition: 5000s background 0s !important;
         }
-        input[type="name"]:valid {
+        /*    input[type="name"]:valid {
           background-color: rgba(87, 183, 87, 0.472);
         }
         input[type="email"]:valid {
@@ -1194,7 +1200,7 @@ footer {
         }
         textarea:valid {
           background-color: rgba(87, 183, 87, 0.472);
-        }
+        } */
       }
     }
     //privacy policy group - bottom of formular

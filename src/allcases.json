@@ -40,6 +40,37 @@
     }
   },
   {
+    "id": "ckpg",
+    "company": "Circkle K x Niantic",
+    "title": "Innovative & engaging partnership",
+    "desc": "Award winning Circkle K x Pokémon GO partnership. Circkle K took home the coveted sponsorship for the innovative partnership and we are happy to have executed that.",
+    "img": "images/pokemon.webp",
+    "heroimg": "/images/poke-case.webp",
+    "video": "/images/pokem-result.webm",
+    "mainimg": "/images/ckpgFlow_2.webp",
+    "logo": "/images/ck-logo.webp",
+    "story": "The Circkle K x Pokémon GO story",
+    "intro": "Visiting sponsored PokéStops & Gyms in Pokémon GO",
+    "longdesc": "You can earn coupons that can be redeemed in Circle K Stores for items like coffee, K Freeze, hot dogs, etc. With this partnership we wanted to activate the consumers and stimulate engagement and sales. \n\n At the same time, we also offered a concept activating consumers both inside and outside the app. The partnership has among other things resulted in app downloads and more traffic within the app. \n\n Countries: USA, Ireland, Denmark, Norway, Sweden",
+    "results": {
+      "resulttitle": [
+        "Innovative partnership",
+        "Engagement & Traffic",
+        "Insightful Dashboard"
+      ],
+      "resulttext": [
+        "The partnership between Circkle K and Niantic Pokémon GO won the 'Innovation of the year Partnership' at the Sponsorship Award in London 2023.",
+        "The concept provides the opportunity to engage with a popular game, while creating a bridge to Circkle K in the form of prizes you can redeem in stores.",
+        "Our Dashboard enables the international marketing department and staff to follow the campaign development in real-time. We strive to present the data as easy to read as possible, and bring the insights that are rewarding for your company."
+      ],
+      "resultico": [
+        "/images/diversity.svg",
+        "/images/magic_exchange.svg",
+        "/images/insights.svg"
+      ]
+    }
+  },
+  {
     "id": "flyingtiger",
     "company": "Flying Tiger",
     "title": "Driving store traffic in multiple markets",
@@ -269,37 +300,6 @@
         "/images/insights.svg",
         "/images/devices.svg",
         "/images/scan.svg"
-      ]
-    }
-  },
-  {
-    "id": "ckpg",
-    "company": "Circkle K x Niantic",
-    "title": "Innovative & engaging partnership",
-    "desc": "Award winning Circkle K x Pokémon GO partnership. Circkle K took home the coveted sponsorship for the innovative partnership and we are happy to have executed that.",
-    "img": "images/pokemon.webp",
-    "heroimg": "/images/pokemon-case-splash.webp",
-    "video": "/images/pokem-result.webm",
-    "mainimg": "/images/ckpgFlow_2.webp",
-    "logo": "/images/ck-logo.webp",
-    "story": "The Circkle K x Pokémon GO story",
-    "intro": "Visiting sponsored PokéStops & Gyms in Pokémon GO",
-    "longdesc": "You can earn coupons that can be redeemed in Circle K Stores for items like coffee, K Freeze, hot dogs, etc. With this partnership we wanted to activate the consumers and stimulate engagement and sales. \n\n At the same time, we also offered a concept activating consumers both inside and outside the app. The partnership has among other things resulted in app downloads and more traffic within the app. \n\n Countries: USA, Ireland, Denmark, Norway, Sweden",
-    "results": {
-      "resulttitle": [
-        "Innovative partnership",
-        "Engagement & Traffic",
-        "Insightful Dashboard"
-      ],
-      "resulttext": [
-        "The partnership between Circkle K and Niantic Pokémon GO won the 'Innovation of the year Partnership' at the Sponsorship Award in London 2023.",
-        "The concept provides the opportunity to engage with a popular game, while creating a bridge to Circkle K in the form of prizes you can redeem in stores.",
-        "Our Dashboard enables the international marketing department and staff to follow the campaign development in real-time. We strive to present the data as easy to read as possible, and bring the insights that are rewarding for your company."
-      ],
-      "resultico": [
-        "/images/diversity.svg",
-        "/images/magic_exchange.svg",
-        "/images/insights.svg"
       ]
     }
   }

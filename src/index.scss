@@ -998,7 +998,7 @@ footer {
       display: grid;
       grid-template-columns: 1fr 1fr;
       .box {
-        --mask: radial-gradient(
+        /*   --mask: radial-gradient(
               93.91px at calc(100% - 126px) 50%,
               #000 99%,
               #0000 101%
@@ -1010,6 +1010,21 @@ footer {
               #000 101%
             )
             calc(100% - 42px) 50%/100% 168px repeat-y;
+        -webkit-mask: var(--mask);
+        mask: var(--mask); */
+
+        --mask: radial-gradient(
+              190.07px at calc(100% - 255px) 50%,
+              #000 99%,
+              #0000 101%
+            )
+            0 calc(50% - 170px) / 100% 340px,
+          radial-gradient(
+              190.07px at calc(100% + 170px) 50%,
+              #0000 99%,
+              #000 101%
+            )
+            calc(100% - 85px) 50%/100% 340px repeat-y;
         -webkit-mask: var(--mask);
         mask: var(--mask);
       }

@@ -2,14 +2,19 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
 import emailjs from "@emailjs/browser";
+import { useState } from "react";
+import { useFormState } from "react-hook-form";
 /* onSubmit={submit} ref={theForm} */
 function ContactForm() {
   const {
     register,
     handleSubmit,
     reset,
+    formState,
     formState: { errors },
   } = useForm();
+
+  const [isSuccessfullySubmitted, setIsSuccessfullySubmitted] = useState(false);
 
   const sendEmail = (formData) => {
     emailjs
@@ -28,6 +33,7 @@ function ContactForm() {
         }
       );
     reset();
+    setIsSuccessfullySubmitted(true);
   };
 
   /*  const onSubmit = (data) => {
@@ -47,6 +53,7 @@ function ContactForm() {
                 required: true,
                 minLength: 1,
               })}
+              disabled={formState.isSubmitting || isSuccessfullySubmitted}
             />
             {errors.name && errors.name.type === "required" && (
               <p className="errorMsg" style={{ color: "#D17575" }}>
@@ -68,6 +75,7 @@ function ContactForm() {
                   message: "E-mail is not valid",
                 },
               })}
+              disabled={formState.isSubmitting || isSuccessfullySubmitted}
             />
             {errors.email && (
               <p className="errorMsg" style={{ color: "#D17575" }}>
@@ -85,6 +93,7 @@ function ContactForm() {
                 minLength: 1,
                 maxLength: 100,
               })}
+              disabled={formState.isSubmitting || isSuccessfullySubmitted}
             />
             {errors.message && errors.message.type === "required" && (
               <p className="errorMsg" style={{ color: "#D17575" }}>
@@ -116,9 +125,12 @@ function ContactForm() {
           </div>
           <button type="submit">SUBMIT</button>
         </fieldset>
-        {/*   {formState.isSubmitted && (
-          <div className="success">Form submitted successfully</div>
-        )} */}
+        {isSuccessfullySubmitted && (
+          <p className="submitMsg">
+            Form submitted successfully, and we will get back to you as soon as
+            possible!
+          </p>
+        )}
       </form>
     </>
   );

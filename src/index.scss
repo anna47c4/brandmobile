@@ -1232,6 +1232,11 @@ footer {
       margin-top: 15px;
       align-self: baseline;
     }
+    //submitted message styling
+    .submitMsg {
+      color: $color-main-blue;
+      font-weight: 900;
+    }
   }
   //top section of contact page
   .box {
